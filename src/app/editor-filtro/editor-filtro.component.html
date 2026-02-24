@@ -1,6 +1,6 @@
 <div class="card-grafica">
     <div class="canvas-preview">
-        <img [style.filter]="filtroScss()" src="https://picsum.photos/id/10/600/400" alt="imagen">
+        <img [style.filter]="filtroScss()" src="https://cdn.pixabay.com/photo/2016/02/10/21/59/landscape-1192669_640.jpg" alt="imagen">
         <div class="controles">
             <label>Brillo: {{brillo()}}</label>
             <input type="range" min="0" max="200" (input)="actualizar('brillo', $event)">
