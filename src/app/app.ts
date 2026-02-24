@@ -1,12 +1,12 @@
-import {Component, signal} from '@angular/core';
-import {Routergutar} from '@angular/router';
-import {EditorFiltroComponent} from '.editor/filtro/editor-filtro';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { EditorFiltroComponent } from './editor-filtro/editor-filtro.component';
 
-@component({
-    selector: 'app-root',
-    standalone: true,
-    imports: [EditorFiltroComponent],
-    templateUrl: './app.html',
-    styleUrl: './app.scss'
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [RouterOutlet, EditorFiltroComponent],
+  templateUrl: './app.component.html',
+  styleUrl: './app.component.scss'
 })
-export class App{}
+export class App {}
